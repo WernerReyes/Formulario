@@ -1,0 +1,201 @@
+body {
+  background-image: radial-gradient(circle at 50% -20.71%, #ffffa1 0, #f5ffa0 6.25%, 
+  #e4ffa0 12.5%, #d2ffa1 18.75%, #bdffa3 25%, #a7fda6 31.25%, #8cfaaa 37.5%, #6cf7af 43.75%,
+   #3cf2b5 50%, #00edbc 56.25%, #00e8c6 62.5%, #00e4d0 68.75%, #00dfdc 75%, #00dbe9 81.25%, #00d7f5 87.5%, 
+   #00d3ff 93.75%, #00d0ff 100%);
+}
+
+/* Formulario */
+/* Estilos para el contenedor padre */
+#contenedorPadre {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #24303c;
+  box-shadow: 10px 10px 15px;
+}
+
+@media screen and (max-width: 668px){
+  #contenedorPadre {
+    max-width: 400px;
+    box-shadow: 5px 5px 10px;
+  }
+}
+
+@media screen and (max-width: 468px){
+  #contenedorPadre {
+    max-width: 300px;
+    box-shadow: 5px 5px 10px;
+  }
+}
+
+/* Estilos para el título */
+h2 {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  color: rgb(246, 244, 244);
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: left;
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* Estilos para los campos de formulario */
+.form-field {
+  margin-bottom: 20px;
+}
+
+label {
+  color: white;
+  margin-bottom: 5px;
+  font-family: 'Permanent Marker', cursive;
+  padding-top: 20px;
+}
+
+.noVerificado, select, textarea {
+  display: block;
+  width: 93%;
+  outline-color: greenyellow;
+  background-color: #24303c;
+  border: 2px solid blue;
+  padding: 15px;
+  font-size: 15px;
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+}
+
+.verificado {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  border: 2px solid rgb(225, 38, 38);
+  border-top: 25px solid rgb(254, 0, 0);
+  background-color: #24303c;
+  font-size: 15px;
+  outline: none;
+  color: white;
+}
+
+.verificado:hover, .noVerificado:hover, select:hover, textarea:hover {
+  background-color: #1f2832;
+  padding: 14px;
+  width: 94%;
+}
+
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 4l8 8 8-8H0z" fill="%23000000"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+textarea {
+  height: 100px;
+}
+
+
+/* Estilos para los campos obligatorios */
+.ob label:after {
+  content: "*";
+  color: red;
+}
+
+/* Estilos para los botones */
+.form-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  background-color: rgb(24, 24, 219);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #31b0d5;
+}
+
+.errorAgregado {
+  width: 100%;
+  margin-bottom: -22px;
+  margin-left: 10px;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+ 
+}
+
+.exito {
+  color: rgb(5, 5, 5);
+  text-align: center;
+  margin: 30px auto;
+  font-family: 'Permanent Marker', cursive;
+  background-color: greenyellow;
+  width: 90%;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: 900;
+  font-size: 20px;
+}
+  
+
+
+  .spinner {
+    margin: 10px auto 0;
+    width: 70px;
+    text-align: center;
+  }
+  
+  .spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+  
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+  
+  .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  
+  .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  
+  @-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 40% { 
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+  }

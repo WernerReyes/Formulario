@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Formulario</title>
+</head>
+<body>
+<div id="contenedorPadre">
+    <h2>FORMULARIO DE CONTACTO</h2>
+	<form id="formulario">
+        <div class="form-section">
+          <h4>Información personal</h4>
+          <div class="form-field">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="noVerificado" id="nombre" name="nombre">
+          </div>
+          <div class="form-field">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="noVerificado" id="apellido" name="apellido">
+          </div>
+          <div class="form-field">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" class="noVerificado" id="correo" name="correo">
+          </div>
+          <div class="form-field">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" class="noVerificado" id="telefono" name="telefono">
+          </div>
+        </div>
+        
+        <div class="form-section">
+          <h4>Información de la empresa</h4>
+          <div class="form-field">
+            <label for="empresa">Nombre de la empresa:</label>
+            <input type="text" class="noVerificado" id="empresa" name="empresa">
+          </div>
+          <div class="form-field">
+            <label for="sector">Sector:</label>
+            <select id="sector" name="sector">
+              <option value="tecnologia">Tecnología</option>
+              <option value="salud">Salud</option>
+              <option value="educacion">Educación</option>
+              <option value="servicios">Servicios</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-section">
+          <h4>Mensaje</h4>
+          <div class="form-field">
+            <label for="asunto">Asunto:</label>
+            <input type="text" class="noVerificado" id="asunto" name="asunto">
+          </div>
+          <div class="form-field">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+        </div>
+      
+        <div class="form-actions">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </div>
+      </form>
+      <div id="spinner" style="display: none;">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+          </div>
+    </div>
+</div>
+      
+
+<script src="index.js"></script>
+</body>
+</html>
